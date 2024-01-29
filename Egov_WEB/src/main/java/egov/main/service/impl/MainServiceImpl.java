@@ -36,7 +36,8 @@ public class MainServiceImpl extends EgovAbstractServiceImpl implements MainServ
 		}
 		HashMap<String,Object> paramMap = new HashMap();
 		//request요청을 paramMap에 담아주기
-		paramMap.put("inid", userid);
+		paramMap.put("myid", userid);
+		paramMap.put("out_state", -1);
 		HashMap<String,Object> resultMap = mainMapper.selectLogin(paramMap);
 		//if
 		if(resultMap ==null)
