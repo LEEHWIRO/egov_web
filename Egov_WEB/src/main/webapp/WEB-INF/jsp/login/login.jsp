@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	나의웹페이지<br/>
-	웹페이지본문
-	${serverId}
+	<form action="loginSubmission.do" method="post">
+		<input type="text" name="id">
+		<input type="text" name="pw">
+		<input type="submit" value="제출">
+	</form>
 </body>
 </html>

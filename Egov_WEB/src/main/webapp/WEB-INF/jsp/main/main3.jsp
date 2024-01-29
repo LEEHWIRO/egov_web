@@ -10,9 +10,6 @@
 	<!-- 자바의 표현식 -->
 	
 	<%=request.getAttribute("userNo") %><br/>
-	
 	<div>${userid}</div>
-
-
 </body>
 </html>
